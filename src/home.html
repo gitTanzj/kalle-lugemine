@@ -7,20 +7,37 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Kalle Lugemine</h1>
+    <div class="header" id="pageHeader">
+        <h1><a href="home.html">Kalle Lugemine</a></h1>
         <ul>
-            <li><a href="home.html">Avaleht</a></li>
             <li><a href="books.html">Raamatud</a></li>
             <li><a href="about.html">Minust</a></li>
             <li><a href="contact.html">Võta ühendust</a></li>
         </ul>
     </div>
     <div class="container">
-
+        <div class="content">
+            aklle
+        </div>
     </div>
     <div class="footer">
-
+        Kalle Riit | +372 5686 5079 | Kopli 1C Tartu
     </div>
+
+    <script>
+
+        var header = document.getElementById("pageHeader")
+        var sticky = header.offsetTop
+
+        const stickyHeader = () => {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky")
+            } else {
+                header.classList.remove("sticky")
+            }
+        }
+
+        window.onscroll = () => stickyHeader()
+    </script>
 </body>
 </html>
