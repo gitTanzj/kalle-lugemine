@@ -46,7 +46,7 @@ body{
 .container{
     align-self: center;
     width: 75%;
-    height: 100vh;
+    min-height: 100vh;
     border-style: solid;
     border-color: rgb(194, 194, 194);
     border-width: 0 2px;
@@ -59,19 +59,39 @@ body{
     margin: 10px;
     padding: 2% 5%;
     display: flex;
+    box-shadow: 2px 2px 5px grey;
 }
 .card sub{
     text-align: right;
 }
+.book-of-the-day{
+    border-width: 3px;
+    border-color: rgb(150, 150, 150);
+    box-shadow: 2px 2px 5px grey;
+}
 .intro{
     flex-direction: column;
     border: 2px solid white;
+    box-shadow: none;
 }
 .intro p{
     font-size: 20px;
 }
 .book-ow{
     padding: 20px;
+}
+
+.about{
+    display: flex;
+    padding: 40px
+}
+.about img{
+    border-radius: 5px;
+}
+.about-text{
+    padding: 40px;
+    font-size: 20px;
+    text-align: justify;   
 }
 .footer{
     box-shadow: 0 -5px 3px -3px grey;
