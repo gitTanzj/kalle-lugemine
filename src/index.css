@@ -13,6 +13,11 @@ img{
 }
 textarea{
     resize: none;
+    height: 100px;
+}
+label{
+    font-size: 26px;
+    margin-right: 5%;
 }
 .header{
     display: flex;
@@ -39,10 +44,12 @@ textarea{
     padding: 5px;
     height: 100%;
     font-size: 1.5em;
+}
+.underline{
     text-decoration: underline 0.15em rgba(0,0,0,0);
     transition: text-decoration-color 0.15s;
 }
-.header li:hover{
+.underline:hover{
     text-decoration-color: rgba(0,0,0,1);
 }
 .header a{
@@ -75,10 +82,17 @@ textarea{
     border-color: rgb(150, 150, 150);
     box-shadow: 2px 2px 5px grey;
 }
+.book-of-the-day span{
+    color: rgb(150, 150, 150)
+
+}
 .intro{
     flex-direction: column;
     border: 2px solid white;
     box-shadow: none;
+}
+.intro a{
+    color: black;
 }
 .intro p{
     font-size: 20px;
@@ -86,13 +100,13 @@ textarea{
 .book-ow{
     padding: 20px;
 }
-
 .about{
     display: flex;
     padding: 40px
 }
 .about img{
     border-radius: 5px;
+    box-shadow: 5px 5px 5px grey;
 }
 .about-text{
     padding: 40px;
@@ -100,39 +114,51 @@ textarea{
     text-align: justify;   
 }
 .contact{
+    padding: 5%;
+    margin: 5%;
+    border-radius: 5px;
+}
+.contact form{
     display: flex;
     flex-direction: column;
-    margin: 5%;
-    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 .form-element{
-    margin-bottom: 5%;
+    display: flex;
+    width: 75%;
+    margin-bottom: 2%;
+    margin-left: 10px;
+    align-items: center;
 }
 .text-input{
-    border: 3px solid white;
-    border-bottom: 3px solid white;
+    border: 3px solid black;
+    border-radius: 5px;
     padding: 10px;
     margin: 5px;
-    font-size: 14px;
+    font-size: 16px;
     outline: none;
     background-color: inherit;
     transition: 0.2s;
     max-height: max-content;
+    width: 50%;
 }
 .text-input:focus{
-    border-bottom: 3px solid black;
+    border: 3px solid black;
 }
 .btn{
+    display: inline-block;
     border: 2px solid dodgerblue;
     border-radius: 5px;
-    background-color: skyblue;
-    color:white;
-    width: 50%;
+    background-color: white;
+    color:dodgerblue;
     padding: 15px; 
-    transition: 0.2s;
+    transition: 0.1s;
+    width: 70%;
 }
 .btn:hover{
     background-color: dodgerblue;
+    color: white;
     cursor: pointer;
 }
 .footer{
