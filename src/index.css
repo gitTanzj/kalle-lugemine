@@ -113,26 +113,43 @@ label{
     font-size: 20px;
     text-align: justify;   
 }
+.contact-content{
+    display:flex;
+    flex-direction: row;
+}
+.contact-icon{
+    width: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
 .contact{
+    width: 50%;
     padding: 5%;
-    margin: 5%;
     border-radius: 5px;
 }
+.contact h1{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 5%;
+}
 .contact form{
+    margin-top: 5%;
+    width: 100%;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 .form-element{
     display: flex;
-    width: 75%;
+    width: 80%;
     margin-bottom: 2%;
-    margin-left: 10px;
     align-items: center;
 }
 .text-input{
-    border: 3px solid black;
+    font-family: 'Lora', serif;
+    border: 2px solid grey;
     border-radius: 5px;
     padding: 10px;
     margin: 5px;
@@ -141,10 +158,12 @@ label{
     background-color: inherit;
     transition: 0.2s;
     max-height: max-content;
-    width: 50%;
+    width: 100%;
 }
 .text-input:focus{
-    border: 3px solid black;
+    transform: translate(-1px, -2px);
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px grey;
 }
 .btn{
     display: inline-block;
@@ -154,12 +173,15 @@ label{
     color:dodgerblue;
     padding: 15px; 
     transition: 0.1s;
-    width: 70%;
+    margin: 5px;
+    width: 80%;
 }
 .btn:hover{
     background-color: dodgerblue;
     color: white;
     cursor: pointer;
+    transform: translate(-1px, -2px);
+    box-shadow: 2px 2px darkblue;
 }
 .footer{
     box-shadow: 0 -5px 3px -3px grey;

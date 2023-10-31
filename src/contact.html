@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Võta ühendust</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
     <div class="header" id="pageHeader">
@@ -16,22 +17,25 @@
         </ul>
     </div>
     <div class="container">
-        <div class="contact">
-            <form>
-                <div class="form-element">
-                    <label for="theme">
-                        Teema
-                    </label>
-                    <input type="text" name="theme" class="text-input">
-                </div>
-                <div class="form-element">
-                    <label for="message">
-                        Sõnum
-                    </label>    
-                    <textarea name="message" class="text-input"></textarea>
-                </div>
-                <button type="submit" class="btn">Saada</button>
-            </form>
+        <div class="contact-content">
+            <div class="contact">
+                <h1>Võta ühendust!</h1>
+                <hr>
+                <form action="mailto:kalle.riit@voco.ee">
+                    <div class="form-element">
+                        <input type="text" name="theme" class="text-input" placeholder="tiitel...">
+                    </div>
+                    <div class="form-element">  
+                        <textarea name="message" class="text-input" placeholder="sõnum..."></textarea>
+                    </div>
+                    <button type="submit" class="btn">Saada</button>
+                </form>
+            </div>
+            <div class="contact-icon">
+                <span class="material-symbols-outlined" style="font-size: 300px; color: rgb(200,200,200);">
+                    mail
+                </span>
+            </div>
         </div>
     </div>
     <div class="footer">
