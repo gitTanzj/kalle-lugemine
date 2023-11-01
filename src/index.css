@@ -102,7 +102,8 @@ label{
 }
 .about{
     display: flex;
-    padding: 40px
+    padding: 40px;
+    justify-content: space-evenly;
 }
 .about img{
     border-radius: 5px;
@@ -111,7 +112,6 @@ label{
 .about-text{
     padding: 40px;
     font-size: 20px;
-    text-align: justify;   
 }
 .contact-content{
     display:flex;
