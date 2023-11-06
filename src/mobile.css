@@ -1,0 +1,52 @@
+
+/* päis */
+.header{
+    display: flex;
+    flex-direction: column;
+}
+.header h1{
+    text-align: center;
+}
+.header ul{
+    gap: 5%;
+}
+
+/* pea konteiner */
+.container{
+    width: 100%;
+}
+
+/* Raamatud */
+.card{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.card img{
+    margin-top: 5%;
+}
+
+/* minust */
+.about{
+    display: flex;
+    flex-direction: column;
+}
+.links{
+    margin-bottom: 10%;
+}
+
+/* Kontakt */
+.contact-content{
+    display:flex;
+    flex-direction: column;
+}
+.contact{
+    width: 90%;
+    align-items: center;
+}
+.contact-icon{
+    width: 100%;
+    align-self: center;
+}
+

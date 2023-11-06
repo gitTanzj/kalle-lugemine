@@ -1,3 +1,4 @@
+<!-- META ANDMED -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minust</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" media="screen and (max-width: 500px)" href="./mobile.css">
 </head>
+<!-- LEHE SISU -->
 <body>
+    <!-- LEHE PÄIS -->
     <div class="header" id="pageHeader">
         <h1><a href="home.html">Kalle Lugemine</a></h1>
         <ul>
@@ -15,9 +19,11 @@
             <li class="underline"><a href="contact.html">Kirjuta mulle</a></li>
         </ul>
     </div>
+    <!-- SISU KONTEINIER -->
     <div class="container">
+        <!-- MINUST -->
         <div class="about">
-            <img src="../assets/pilt-minust-uus.jpg" width="300" alt="Pilt minust">
+            <img src="../assets/pilt-minust-uus.jpg" height="500" alt="Pilt minust">
             <div class="about-text">
                 <h1>Veidi minust</h1>
                     <h2>Hei hopsti!</h2>
@@ -31,18 +37,21 @@
                     <p style="text-align: right; font-size: 18px; margin-right: 5%;"> - Kalle Riit</p>
                 </div>
             </div>
+            <!-- LINGID -->
             <div class="links">
                 <a href="https://github.com/gitTanzj/" target="_blank"><img src="../assets/logos/github-seeklogo.com.svg"></a>
                 <a href="https://instagram.com/_kallee9" target="_blank"><img src="../assets/logos/instagram-seeklogo.com.svg"></a>
-                <a href="https://x.com/" target="_blank"><img src="../assets/logos/twitter-x-seeklogo.com-4.svg"></a>
+                <a href="https://www.linkedin.com/in/kalle-riit-190587245/" target="_blank"><img src="../assets/logos/linkedin.svg"></a>
             </div>
         </div>
     </div>
+    <!-- LEHE JALUS -->
     <div class="footer">
         Kalle Riit | +372 5686 5079 | Kopli 1C Tartu
     </div>
+    <!-- JAVASCRIPT -->
     <script>
-
+        // KLEEPUV PÄIS
         var header = document.getElementById("pageHeader")
         var sticky = header.offsetTop
 

@@ -1,3 +1,4 @@
+<!-- META ANDMED -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalle Lugemine</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" media="screen and (max-width: 500px)" href="./mobile.css">
 </head>
+<!-- LEHE SISU -->
 <body>
+    <!-- LEHE PÄIS -->
     <div class="header" id="pageHeader">
         <h1><a href="home.html">Kalle Lugemine</a></h1>
         <ul>
@@ -15,8 +19,10 @@
             <li class="underline"><a href="contact.html">Kirjuta mulle</a></li>
         </ul>
     </div>
+    <!-- SISU KONTEINIER -->
     <div class="container">
         <div class="content">
+            <!-- SISSEJUHATUS -->
             <div class="card intro">
                 <h1>Tervist!</h1>
                 <p>
@@ -25,6 +31,7 @@
                     Kui sul on küsimusi, siis võta minuga ühendust läbi <a class="underline" href="contact.html">kontaktivormi</a>.
                 </p>
             </div>
+            <!-- RAAMATU ELEMENT -->
             <div class="card book-of-the-day">
                 <img src="../assets/books/817qa-aY0AL._AC_UF894,1000_QL80_.jpg"alt="book of the day" width="200">
                 <div class="book-ow">
@@ -42,11 +49,13 @@
             </div>
         </div>
     </div>
+    <!-- lEHE JALUS -->
     <div class="footer">
         Kalle Riit | +372 5686 5079 | Kopli 1C Tartu
     </div>
+    <!-- JAVASCRIPT -->
     <script>
-
+        // KLEEPUV PÄIS
         var header = document.getElementById("pageHeader")
         var sticky = header.offsetTop
         
